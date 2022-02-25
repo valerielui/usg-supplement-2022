@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Gotham';
     src: url("/assets/typeface/GothamBook.ttf")
@@ -132,6 +133,7 @@ nav a {
     margin:0;
     padding: 0;
     width: 25%;
+    display: block;
 }
 .dropdown li {
     line-height: 1rem;
@@ -147,7 +149,7 @@ button {
     padding: 1rem;
     transition-duration: 300ms;
     height: 100%;
-    width: 100%;
+    width: 100%!important;
 }
 .dropdown {
     position: relative;
@@ -167,9 +169,8 @@ button {
     padding: 0;
     margin: 0;
     line-height: 2.5rem;
-    pointer-events: none;
     opacity: 0;
-
+    z-index: 1;
 }
 .dropdown li {
     list-style: none;
@@ -184,6 +185,7 @@ button {
     color: #000000;
     text-transform: uppercase;
     width: 100%;
+
 }
 .dropdown button:focus + ul, .dropdown button:hover + ul {
     opacity: 1;
@@ -319,7 +321,7 @@ footer p {
     opacity: 0;
 }
 .box:hover .overlay {
-    opacity: 0.4;
+    opacity: 0.6;
     transition: .5 ease;
 }
 .overlay img {
@@ -462,6 +464,7 @@ footer p {
         top: 5rem;
         text-align: center;
         height: 100%;
+        width: 100%;
         background-color: white;
     }
     .show,
@@ -472,7 +475,7 @@ footer p {
     .navbar {
         display: block;
     }
-    .navbar button,
+    .navbar a,
     .dropdown {
         width: 100%;
         line-height: 2rem;
